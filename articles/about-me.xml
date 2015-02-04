@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<article id="check-out-the-latest-xkcd">
+  <headline>ABOUT ME</headline>
+  <pubdate>2014-01-16</pubdate>
+  <pubdatelong>Dan Harris - site creator</pubdatelong>
+  <status></status>
+  <type></type>
+  <script></script>
+  <body><![CDATA[<p>Hi, i'm Dan Harris - IT student at <a href="http://www.flinders.edu.au/" target="_blank">Flinders University</a>, brewer of fine ales and all round good guy.</p>
+
+  <p>I am currently undertaking my second year of study for a <a href="http://www.flinders.edu.au/courses/undergrad/bitns/" target="_blank"> Bachelor of IT (Network & Cybersecurity Systems)</a>. After an introduction to Web Systems through my studies I decided to create this blog to both further my Web Development knowledge and showcase other coding endeavours.</p>
+  
+  <p>This blog (code & content) was created by myself, from scratch (with a great <a href="http://www.sublimetext.com/" target="_blank">text editor</a>) using PHP. It is intended to be as lightweight and easy to use as possible. To improve my knowledge I decided to code this blog rather than using <a href="https://wordpress.org/" target="_blank">some of the excellent open source web software</a> out there. Creating this site was fun, and while i consider this first iteration of the website complete I am constantly working to improve the functionality and layout of the site (especially the mobile website styling). So, any problems with viewing this site on a mobile device, opinions, constructive criticism or bad jokes, please email me at: <a href="mailto:dan@beardedman.info">dan@beardedman.info</a>.
+  </p>
+
+  <p>I recently started trying to improve my java and coding skills by experimenting with android apps. These are available under the projects menu of the website along with other scripts and tidbits ive created. Most projects source code is also available at my GitHub page, listed below. Feel free to connect with me via GitHub, LinkedIn or Twitter via the following links:</p>
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://au.linkedin.com/in/danmharris/" target="_blank"><img src="images/linkedin.png" height="25px" width="25px"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://au.linkedin.com/in/danmharris/" target="_blank">au.linkedin.com/in/danmharris/</a></p>
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/beardedmandan/" target="_blank"><img src="images/github.png" height="25px" width="25px"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/beardedmandan/" target="_blank">github.com/beardedmandan/</a></p>
+  
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.twitter.com/danbeardedman/" target="_blank"><img src="images/twitter.png" height="25px" width="25px"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.twitter.com/danbeardedman/" target="_blank">@DanBeardedMan - http://www.twitter.com/danbeardedman/</a></p>
+   
+  ]]></body>
+  <keywords></keywords>
+</article>

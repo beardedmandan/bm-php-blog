@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<article id="check-out-the-latest-xkcd">
+  <headline>Check out the Latest XKCD</headline>
+  <pubdate>2014-01-16</pubdate>
+  <pubdatelong>Friday, 16th January 2015</pubdatelong>
+  <status>live</status>
+  <type>project</type>
+  <script>20150116160750_check-out-the-latest-xkcd.inc.php</script>
+  <body><![CDATA[<p><em><strong>EDIT (03/02/15):</strong> I have uploaded this snippet of code to GitHub - <a href="https://github.com/beardedmandan/xkcd-import-php" target="_blank">https://github.com/beardedmandan/xkcd-import-php</a></em></p>
+   <p>When first creating this site, I needed a placeholder for the main page - the standard "Website coming soon" just wasnt enough. So i decided to 'tap' the <a href="http://xkcd.com/rss.xml" target="_blank">rss feed</a> of popular nerd-comic website <a href="http://xkcd.com/" target="_blank">XKCD</a>. This article dynamically shows the latest <a href="http://xkcd.com/" target="_blank">XKCD</a> for your viewing pleasure. Enjoy.</p>
+
+  <p>And, as always, <a href="http://xkcd.com/239/" target="_blank">(semi) relevant XKCD</a>
+</p>]]></body>
+  <keywords>latest xkcd</keywords>
+</article>

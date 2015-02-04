@@ -1,0 +1,283 @@
+body {
+	color: black;
+	background-color: WhiteSmoke;
+	font-family: Helvetica, Arial, sans-serif;
+	letter-spacing: .4px;
+	font-size: 14px;
+	color: #6E6E6E;
+	padding: -5px;
+	left: 0;
+    top: 0;
+    margin: 0px;
+    padding: 0px;
+    text-align: justify;
+    min-width: 310px;
+}
+
+body:after{
+    display:none;
+    content: url("images/linkedin.png");
+	content: url("images/github.png");
+    content: url("images/twitter.png");
+}
+
+h1 {
+	font: bold 30px Helvetica, Sans-Serif;
+	letter-spacing: -2.5px;
+	color: black;
+}
+
+h2 {
+	font: bold 24px Helvetica, Sans-Serif;
+	letter-spacing: -2.0px;
+	color: black;
+}
+
+h3 {
+	font: bold 16px Helvetica, Sans-Serif;
+	letter-spacing: -1.5px;
+}
+
+h1 > a, h2 > a, h3 > a {
+	color: black;
+	text-decoration: none;
+}
+
+h1 > a:hover, h2 > a:hover, h3 > a:hover {
+	color: #58ACFA;
+	text-decoration: none;
+}
+
+
+a {
+	color: #58ACFA;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+hr {
+	width: 100%;
+	height: 2px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	border: 0px;
+	background-color: #D8D8D8;
+}
+
+ol, ul {
+	line-height: 25px;
+}
+
+/*--------- navtop ---------*/
+
+#layout-navtop {
+	width: 100%;
+	min-width: 310px;
+	height: 105px;
+	background-color: #BDBDBD;
+	z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+#layout-navtop-inner {
+	width: 300px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content-navtop-logo {
+	width: 300px;
+	margin-top: 5px;
+	float: left;
+}
+
+#content-navtop-logo a {
+	color: inherit;
+}
+
+#content-navtop-logo a:hover {
+	text-decoration: inherit;
+}
+
+#content-navtop-logo img {
+	float: left;
+	margin-right: 10px;
+}
+
+#content-navtop-logo h1 {
+	font-size: 28px;
+	margin-top: 3px;
+}
+
+#content-navtop-logo h3 {
+	margin-top: -20px;
+	padding-left: 60px;
+	font: 16px Helvetica, Sans-Serif;
+	color: #848484;
+	letter-spacing: -1.6px;
+}
+
+#content-navtop-menu {
+	padding-left: 3px;
+	width: 100%;
+}
+
+.menu-link {
+	float: left;
+	padding-left: 3px;
+	padding-right: 4px;
+}
+
+.menu-link a {
+	color: #585858;
+	font: 18px Helvetica, Sans-Serif;
+	letter-spacing: -1.7px;
+}
+
+.menu-link a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+.linkedin {
+	width: 20px;
+	height: 20px;
+	display: block;
+	background: transparent url("images/linkedin_bw.png") center top no-repeat;
+	background-size: 100% 100%;
+}
+
+.linkedin:hover {
+	background-image: url("images/linkedin.png"); 
+}
+
+.github {
+	width: 20px;
+	height: 20px;
+	display: block;
+	margin-left: -4.5px;
+	background: transparent url("images/github_bw.png") center top no-repeat;
+	background-size: 100% 100%;
+}
+
+.github:hover {
+	background-image: url("images/github.png"); 
+}
+
+.twitter {
+	width: 20px;
+	height: 20px;
+	display: block;
+	margin-left: -4.5px;
+	background: transparent url("images/twitter_bw.png") center top no-repeat;
+	background-size: 100% 100%;
+}
+
+.twitter:hover {
+	background-image: url("images/twitter.png"); 
+}
+
+
+/*--------- main ---------*/
+
+#layout-main {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 295px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#content-main-sitetype {
+	float: right;
+	margin-top: -4px;
+	color: #A4A4A4;
+	font-size: 12px;
+	margin-bottom: 0px;
+}
+
+#layout-main-page-select {
+	background-color: #D8D8D8;
+	width: 100%;
+	height: 40px;
+	margin-top: -20px;
+}
+
+.content-main-article  h2 {
+	font: 22px Helvetica, Sans-Serif;
+	letter-spacing: -1.4px;
+	margin-bottom: 0px;
+}
+
+.content-main-article  h3 {
+	font: 16px Helvetica, Sans-Serif;
+	color: #BDBDBD;
+	margin-top: -2px;
+}
+
+.content-main-article  p {
+    line-height: 20px;
+}
+
+.content-main-script {
+	text-align: center;
+}
+
+#layout-main-page-link {
+	float: right;
+	padding-right: 15px;
+	margin-top: 8px;
+}
+
+.page-link {
+	float: left;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.page-link h3 {
+	color: #BDBDBD;
+	font: 18px Helvetica, Sans-Serif;
+	letter-spacing: -1.7px;
+	margin: 0px;
+}
+
+.page-link a {
+	color: #6E6E6E;
+	font: 18px Helvetica, Sans-Serif;
+	letter-spacing: -1.7px;
+}
+
+.page-link a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+.content-main-script img {
+	max-width: 295px;
+}
+
+/*--------- footer ---------*/
+
+#layout-footer {
+	width: 295px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 40px;
+	color: #A4A4A4;
+	text-align: justify;
+	font-size: 10px;
+}
+
+#layout-footer img {
+	float: left;
+	margin-right: 5px;
+}

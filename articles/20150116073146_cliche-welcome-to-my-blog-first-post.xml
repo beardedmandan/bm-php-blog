@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<article id="cliche-welcome-to-my-blog-first-post">
+  <headline>Cliche "Welcome to my Blog" first post</headline>
+  <pubdate>2014-01-16</pubdate>
+  <pubdatelong>Friday, 16th January 2015</pubdatelong>
+  <status>live</status>
+  <type>blogpost</type>
+  <script></script>
+  <body><![CDATA[<p>Ive just finished (mostly) writing this blog, or at least the code behind it. Welcome!</p>
+
+  <p>Using nothing but a text editor (big thankyou to <a href="http://www.sublimetext.com/" target="_blank">Sublime Text 2</a>) ive managed to create this blog from PHP and a sprinkle of JavaScript. Any suggestions or feedback is most welcome, just <a href="mailto:dan@beardedman.info">contact me</a>. I plan to update this site throughout the year with posts and homemade projects (such as a few android/html5 games) in additon to projects completed during <a href="article.php?id=about-me">my studies</a> at <a href="http://www.flinders.edu.au/" target="_blank">Flinders University</a>.</p>
+
+  <p>Thanks for reading, now, next job on the list is to complete the blogs mobile version.
+</p>]]></body>
+  <keywords>welcome first post</keywords>
+</article>
