@@ -2,9 +2,9 @@
 	<div id="layout-navtop-inner">
 
 	<div id="content-navtop-logo">
-		<a href="index.php"><img src="images/bm_logo_100.png" height="50" width="50" alt="BeardedMan Logo" />
-		<h1>BEARDEDMAN.INFO</h1>
-		<h3>DAN HARRIS &nbsp; - &nbsp; PROJECTS & BLOG</h3>
+		<a href="index.php"><img src="images/bm_logo_100.png" height="55" width="55" alt="BeardedMan Logo" />
+		<h1>BEARDEDMAN.info</h1>
+		<h3>DAN HARRIS - BLOG & PROJECTS</h3>
 		</a>
 	</div>
 
@@ -13,7 +13,7 @@
 			<a href="index.php" title="BLOG">BLOG</a>
 		</div>
 		<div class="menu-link">
-			<a href="article.php?id=about-me" title="ABOUT ME">ABOUT ME</a>
+			<a href="article.php?id=about-me" title="ABOUT ME">ABOUT-ME</a>
 		</div>
 		<div class="menu-link">
 			<a href="index.php?content=projects" title="PROJECTS">PROJECTS</a>

@@ -20,6 +20,16 @@ body:after{
     content: url("images/twitter.png");
 }
 
+@font-face {
+    font-family: 'MiniSet2';
+    src: url('./font/miniset2-webfont.eot');
+    src: url('./font/miniset2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./font/miniset2-webfont.woff') format('woff'),
+         url('./font/miniset2-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1 {
 	font: bold 30px Helvetica, Sans-Serif;
 	letter-spacing: -2.5px;
@@ -43,13 +53,13 @@ h1 > a, h2 > a, h3 > a {
 }
 
 h1 > a:hover, h2 > a:hover, h3 > a:hover {
-	color: #58ACFA;
+	color: #FF6600;
 	text-decoration: none;
 }
 
 
 a {
-	color: #58ACFA;
+	color: #FF6600;
 	text-decoration: none;
 }
 
@@ -79,9 +89,11 @@ ol, ul {
 	min-width: 1010px;
 	height: 85px;
 	background-color: #BDBDBD;
+	background-image: url('images/navtop_bg.png');
 	z-index: 1;
     top: 0;
     left: 0;
+    border-bottom: solid 2px;
 }
 
 #layout-navtop-inner {
@@ -111,19 +123,23 @@ ol, ul {
 }
 
 #content-navtop-logo h1 {
-	margin-top: 13px;
+	margin-top: 6px;
+	font-family: 'MiniSet2' , Helvetica, sans-serif;
+	font-size: 34px;
+	letter-spacing: 0px;
 }
 
 #content-navtop-logo h3 {
-	margin-top: -20px;
+	margin-top: -30px;
 	font: 18px Helvetica, Sans-Serif;
+	font-family: 'MiniSet2' , Helvetica, sans-serif;
 	color: #848484;
-	letter-spacing: -1.6px;
+	letter-spacing: 0px;
 }
 
 #content-navtop-menu {
 	float: right;
-	margin-top: 55px;
+	margin-top: 50px;
 }
 
 .menu-link {
@@ -134,8 +150,9 @@ ol, ul {
 
 .menu-link a {
 	color: #585858;
-	font: 18px Helvetica, Sans-Serif;
-	letter-spacing: -1.7px;
+	font: 20px Helvetica, Sans-Serif;
+	font-family: 'MiniSet2' , Helvetica, sans-serif;
+	letter-spacing: 0px;
 }
 
 .menu-link a:hover {
@@ -206,18 +223,24 @@ ol, ul {
 	background-color: #D8D8D8;
 	width: 950px;
 	height: 40px;
-	margin-top: -20px;
+	margin-top: -23px;
+	background-image: url('images/page-select_bg.png');
+	border: solid 2px;
+	border-color: #D8D8D8;
 }
 
 .content-main-article  h2 {
 	font: 22px Helvetica, Sans-Serif;
-	letter-spacing: -1.4px;
+	font-family: 'MiniSet2' , Helvetica, sans-serif;
+	letter-spacing: 0px;
 	margin-bottom: 0px;
 }
 
 .content-main-article  h3 {
 	font: 16px Helvetica, Sans-Serif;
+	font-family: 'MiniSet2' , Helvetica, sans-serif;
 	color: #BDBDBD;
+	letter-spacing: 0px;
 	margin-top: -2px;
 }
 
@@ -243,14 +266,16 @@ ol, ul {
 .page-link h3 {
 	color: #BDBDBD;
 	font: 18px Helvetica, Sans-Serif;
-	letter-spacing: -1.7px;
+	font-family: 'MiniSet2' , Helvetica, sans-serif;
+	letter-spacing: 0px;
 	margin: 0px;
 }
 
 .page-link a {
 	color: #6E6E6E;
 	font: 18px Helvetica, Sans-Serif;
-	letter-spacing: -1.7px;
+	font-family: 'MiniSet2' , Helvetica, sans-serif;
+	letter-spacing: 0px;
 }
 
 .page-link a:hover {

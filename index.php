@@ -37,6 +37,7 @@
 
 <!-- ========================== BODY ========================== -->
 <body>
+	
 	<!-- NAVIGATION BAR -->
 	<?php
 		//use mobile or desktop navbar depending on viewing device
@@ -103,7 +104,7 @@
 					echo htmlentities($item['headline']) . '</a></h2>';
 					echo '<h3>' . htmlentities($item['pubdatelong']) . '</h3>'; // prints publish date (long version)
 					if(strlen($item['body']) > 1200){
-						echo substr($item['body'],0,1200) . '....'; // prints article preview (up to a maximum of 1200 chars)
+						echo substr($item['body'],0,1200) . '....</p>'; // prints article preview (up to a maximum of 1200 chars)
 					} else {
 						echo $item['body'];
 					}
@@ -162,7 +163,9 @@
 				?>
 			</div>
 		</div>
-	</div>		
+
+	</div>
+
 	</div>
 
 <!-- ========================= FOOTER ========================= -->
