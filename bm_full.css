@@ -81,7 +81,6 @@ ol, ul {
 	line-height: 25px;
 }
 
-
 /*--------- navtop ---------*/
 
 #layout-navtop {
@@ -229,6 +228,10 @@ ol, ul {
 	border-color: #D8D8D8;
 }
 
+.content-main-article {
+	min-height: 200px;
+}
+
 .content-main-article  h2 {
 	font: 22px Helvetica, Sans-Serif;
 	font-family: 'MiniSet2' , Helvetica, sans-serif;
@@ -248,7 +251,15 @@ ol, ul {
     line-height: 20px;
 }
 
-.content-main-script {
+.content-main-article-image-preview  img {
+    width: 150px;
+    max-height: 150px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.content-main-script, .content-main-article-image {
 	text-align: center;
 }
 

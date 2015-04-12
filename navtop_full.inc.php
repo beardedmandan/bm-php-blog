@@ -16,7 +16,7 @@
 			<a href="article.php?id=about-me" title="ABOUT ME">ABOUT-ME</a>
 		</div>
 		<div class="menu-link">
-			<a href="index.php?content=projects" title="PROJECTS">PROJECTS</a>
+			<a href="index.php?content=project" title="PROJECTS">PROJECTS</a>
 		</div>
 		<div class="menu-link">
 			<a href="http://au.linkedin.com/in/danmharris/" class="linkedin" target="_blank" title="linkedIn page"></a>

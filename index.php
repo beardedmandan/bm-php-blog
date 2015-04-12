@@ -1,6 +1,7 @@
 <?php
+//declare and initiate all common page variables
 	include_once 'common.inc.php';
-	$content = 'blogpost';
+	$content = 'all';
 	$contentLink = '';
 	$page = 1;
 	$numArticles = -1;
@@ -26,7 +27,7 @@
 <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
 <meta name="description" content="Dan Harris - Personal Blog and Project Repository">
 <meta name="keywords" content="beardedman, blog, personal project, dan harris">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0, user-scalable=yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.8, maximum-scale=3.0, user-scalable=yes" />
 <link rel="icon" href="favicon.ico" />
 <?php
 	//detect if displaying page on mobile device, style appropriately
@@ -69,19 +70,26 @@
 				$numArticles += 1;	
 			}
 
+			sort($fileList);
 			$fileList = array_reverse($fileList); //show most recent files
+			$typePattern = '/' . (string)$content . '/';
+			if($content == 'all' || $content == ''){
+				$typePattern = '/\\w/';
+			}
 
 			// Reads files {article, news, brews} and enters their details into $items[] array for display.
 			// Only records a maximum of $articlesPerPage items in $items[] to display
 			foreach ($fileList as $file) {
 				$xmlItem = simplexml_load_file($articleDir . $file);
-				if ((string)$xmlItem->status == 'live' && ((string)$xmlItem->type == $content || (string)$xmlItem->type == 'project')) {
+				if ((string)$xmlItem->status == 'live' && (preg_match($typePattern, (string)$xmlItem->type))) {
 					if((string)$xmlItem->type == 'project') {$numProjects += 1;}
 					$displayArticles += 1;
 					if(($displayArticles > (($page - 1) * $articlesPerPage) || $page == 0) && $displayArticles <= ($page * $articlesPerPage)){
 						$item = array();
 						$item['id'] = (string)$xmlItem['id'];
 						$item['headline'] = strtoupper((string)$xmlItem->headline);
+						$item['type'] = strtoupper((string)$xmlItem->type);
+						$item['image'] = (string)$xmlItem->image;
 						$item['body'] = (string)$xmlItem->body;
 						$item['pubdatelong'] = strtoupper((string)$xmlItem->pubdatelong);
 						$items[] = $item;
@@ -90,27 +98,30 @@
 			}
 
 			// used for page content navigation if seeking to display projects only
-			if($content == 'projects') {
+			if($content == 'project') {
 				$numArticles = $numProjects;
-				$contentLink = '&content=projects';
+				$contentLink = '&content=project';
 			}
 
 			// prints articles to html page from details in $items[]		
-			if (count($items) > 0) {
-				
+			if (count($items) > 0) {		
 				foreach ($items as $item) {
 					echo '<div class="content-main-article">';
 					echo '<h2><a href="article.php?id=' . $item['id'] . '">';
 					echo htmlentities($item['headline']) . '</a></h2>';
-					echo '<h3>' . htmlentities($item['pubdatelong']) . '</h3>'; // prints publish date (long version)
+					echo '<h3>' . htmlentities($item['pubdatelong']) . ' (' . htmlentities($item['type']) . ')</h3>'; // prints publish date (long version)
+					if(strlen($item['image']) > 0){
+						echo '<div class="content-main-article-image-preview"><a href="article.php?id=' . $item['id'] . '"><img src="' . htmlentities($item['image']) . '"/></a></div>';
+					}
 					if(strlen($item['body']) > 1200){
 						echo substr($item['body'],0,1200) . '....</p>'; // prints article preview (up to a maximum of 1200 chars)
 					} else {
 						echo $item['body'];
 					}
 					echo '<br/><a href="article.php?id=' . $item['id'] . '">Read More</a>';
-					echo '<hr/>';
 					echo '</div>';
+					echo '<hr/>';
+					
 				}
 			} else {
 				//if no article is set to load, redirects to index page

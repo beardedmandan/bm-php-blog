@@ -249,8 +249,25 @@ ol, ul {
     line-height: 20px;
 }
 
-.content-main-script {
+.content-main-article-image-preview  img {
+    max-width: 95%;
+    max-width: 290px;
+    max-height: 290px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.content-main-script, .content-main-article-image {
 	text-align: center;
+	max-width: 295px;
+}
+
+.content-main-script img, .content-main-article-image img {
+	max-width: 95%;
+	max-width: 290px;
+	max-height: 290px;
 }
 
 #layout-main-page-link {
@@ -283,10 +300,6 @@ ol, ul {
 .page-link a:hover {
 	color: #000000;
 	text-decoration: none;
-}
-
-.content-main-script img {
-	max-width: 295px;
 }
 
 /*--------- footer ---------*/

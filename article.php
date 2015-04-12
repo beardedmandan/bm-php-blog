@@ -30,7 +30,7 @@
 <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
 <meta name="description" content="Dan Harris - Personal Blog and Project Repository">
 <meta name="keywords" content="beardedman, blog, personal project, dan harris">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.8, maximum-scale=3.0, user-scalable=yes" />
 <link rel="icon" href="favicon.ico" />
 <?php
 	//detect if displaying page on mobile device, style appropriately
@@ -62,12 +62,14 @@
 		<?php
 			// prints article to html page
 			echo '<h2>' . strtoupper(htmlentities($articleXML->headline)) . '</h2>';
-			echo '<h3>' . strtoupper(htmlentities($articleXML->pubdatelong)) . '</h3>';
+			echo '<h3>' . strtoupper(htmlentities($articleXML->pubdatelong)) . ' (' . strtoupper(htmlentities($articleXML->type)) . ')</h3>';
 			if ((string)$articleXML->script !== '') {
 				echo '<div class="content-main-script">';
 				include_once $projectDir . (string)$articleXML->script;
 				echo '</div>';
-			} 
+			} else if ((string)$articleXML->image !== '') {
+				echo '<div class="content-main-article-image"><img src="' . htmlentities($articleXML->image) . '"/></div>';
+			}  
 			echo $articleXML->body;
 		?>
 		<br/>
